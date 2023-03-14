@@ -1,0 +1,46 @@
+// @function fontsize(){
+
+// }
+
+h2{
+    color: complement($color: yellow);
+}
+
+@function lightnessText($bgCol)
+{
+    @if(lightnessText($bgCol)< 50 )
+    {
+        @return white;
+    }
+    @else
+    {
+        @return black;
+    }
+}
+
+h3{
+    color: lightnessText(white);
+}
+
+@mixin border-radius{
+    border-radius: 5px;
+}
+
+@mixin hColor {
+    color: red;
+    background-color: blue;
+}
+
+$primaryColor: yellow;
+
+h1{
+    @include hColor()
+}
+
+button{
+    @include border-radius()
+}
+
+p{
+    color: $primaryColor;
+}

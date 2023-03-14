@@ -1,0 +1,20 @@
+h2 {
+  color: purple;
+}
+
+h3 {
+  background-color: black;
+}
+
+h1 {
+  color: red;
+  background-color: blue;
+}
+
+button {
+  border-radius: 5px;
+}
+
+p {
+  color: green;
+}/*# sourceMappingURL=style.css.map */
